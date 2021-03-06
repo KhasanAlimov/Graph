@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #f6f6f2;
+}
+
+/* Загаловок */
+.headline {
+  text-align: center;
+  color: #6fb3b8;
+}
+
+.normal-content {
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+}
+
+/* Предупреждение */
+#info {
+  position: fixed;
+  top: 30px;
+  visibility: hidden;
+  right: -270px;
+  width: 200px;
+  height: max-content;
+  padding: 2%;
+  background-color: #65abfba6;
+  border: solid 1px #256ab8;
+  border-radius: 5px 0 0 5px;
+  transition: 0.5s;
+  color: #004da5;
+  z-index: 100;
+}
+
+#info button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #256ab8;
+  cursor: pointer;
+  color: #fff;
+}
+
+.info-open {
+  visibility: visible !important;
+  right: 0 !important;
+}
+
+/* Секции */
+section {
+  padding: 25px 0;
+}
+.subtitle {
+  color: #90473f;
+}
+
