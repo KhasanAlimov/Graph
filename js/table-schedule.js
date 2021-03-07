@@ -91,7 +91,7 @@ fetch(URL)
     // Добавление таблицы в HTML
     tableContainer.appendChild(table);
 
-    /* =========================================== */
+    /* ============================================ */
 
     // Графика
     // Создаём с помощю d3.js
@@ -121,15 +121,18 @@ fetch(URL)
       .style('transform', `translate(0, ${(height - 30)}px)`)
       .call(xAxis);
 
+
     // Вертикальная шкала
-    let yScalePrice = data.map((item) => {
-      item.company.forEach((companies) => {
-        console.log(companies.price.length)
-      });
-    });
+    let allPrices = [];
+
+    data.forEach(item => {
+      item.company.forEach(prices => {
+        allPrices.push(prices.price)
+      })
+    })
 
     let yScale = d3.scaleLinear()
-                .domain([d3.max(yScalePrice), 0])
+                .domain([d3.max(allPrices), 0])
                 .range([20, height - 30]);
 
     let yAxis = d3.axisLeft(yScale);
