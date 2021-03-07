@@ -1,8 +1,29 @@
-
+/* Переключатели графика компаний */
+#companies-button-block {
+  text-align: center;
+  padding: 9px 0;
+}
+#companies-button-block span {
+  padding: 10px 20px;
+  background-color: #5edbcb;
+  font-weight: 600;
+  border-right: solid 2px #f6f6f2;
+  cursor: pointer;
+  color: #00927f;
+  transition: 0.3s;
+}
+#companies-button-block span:last-child {
+  border-right: none;
+}
+#companies-button-block span:hover {
+  background-color: #00927f;
+  color: #d0efeb;
+}
+/* SVG */
 #svg_container {
   overflow: auto;
   width: 100%;
-  color: #7a7a7a;
-  background-color: #e6e6e6;
+  color: #0b81a5;
+  background-color: #d0efeb;
   text-align: center;
 }
