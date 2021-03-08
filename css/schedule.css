@@ -19,11 +19,39 @@
   background-color: #00927f;
   color: #d0efeb;
 }
+.active-graph {
+  background-color: #d0efeb !important;
+  padding: 15px 20px !important;
+}
+.active-graph:hover {
+  color: #00927f !important;
+}
 /* SVG */
 #svg_container {
+  position: relative;
   overflow: auto;
   width: 100%;
   color: #0b81a5;
   background-color: #d0efeb;
   text-align: center;
+}
+#show-dots {
+  position: absolute;
+    top: 35px;
+    left: 100px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #98cec794;
+    border-radius: 3px;
+    box-shadow: -3px 5px 15px 0px #68ada4;
+    cursor: pointer;
+}
+#svg_container svg circle, #svg_container svg path{
+  transition: 0.5s;
+  cursor: pointer;
+}
+#svg_container svg circle:hover {
+  r: 10;
+  fill: #923a00;
 }
